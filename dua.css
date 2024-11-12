@@ -1,7 +1,7 @@
 /* Gaya Umum */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f4f6;
+    background-color: #ffa12c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ form {
 
 h1 {
     font-size: 24px;
-    color: #333;
+    color: black;
     text-align: center;
 }
 
@@ -46,8 +46,8 @@ label {
 input[type="text"],
 input[type="password"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 5px;
+    border: 1px solid #ffa12c;
     border-radius: 5px;
     font-size: 16px;
     background-color: #f9f9f9;
