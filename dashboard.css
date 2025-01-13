@@ -1,0 +1,134 @@
+/* Reset dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffa12c; /* Warna latar merah */
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #a15f0e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Container menu */
+.menu-container { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Item menu */
+.menu-item {
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Gambar menu */
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Judul paket */
+.menu-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #a15f0e;
+}
+
+/* Harga paket */
+.menu-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Tombol */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #a15f0e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #a15f0e;
+    transform: translateY(-2px);
+}
+
+/* Pesanan */
+.orders {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.orders h2 {
+    color: #a15f0e;
+}
+
+.orders ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.orders li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #a15f0e;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
