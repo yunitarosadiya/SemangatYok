@@ -11,7 +11,7 @@ const menuItems = {
     "Paha": 8500,
     "Sayap": 8500,
     "Nasi": 3000,
-    "Es Teh": 2000
+    "Es Teh": 2000,
 };
 
 function addOrder() {

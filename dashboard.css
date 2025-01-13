@@ -30,12 +30,18 @@ header p {
 }
 
 /* Container menu */
-.menu-container { 
+.menu-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .menu-item {
+        width: 100%; /* Elemen menu memenuhi lebar layar pada perangkat kecil */
+    }
 }
 
 /* Item menu */
@@ -44,11 +50,16 @@ header p {
     color: #333;
     border-radius: 8px;
     padding: 15px;
-    width: 250px;
+    width: 250px; /* Lebar konsisten */
+    min-height: 350px; /* Tambahkan tinggi minimum untuk memastikan semua elemen memiliki ukuran seragam */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pastikan elemen dalam item menu tersebar secara merata */
 }
+
 
 .menu-item:hover {
     transform: scale(1.05);
@@ -58,7 +69,8 @@ header p {
 /* Gambar menu */
 .menu-item img {
     width: 100%;
-    height: auto;
+    height: 150px; /* Tetapkan tinggi tetap untuk gambar */
+    object-fit: cover; /* Pastikan gambar tetap proporsional */
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -68,14 +80,18 @@ header p {
     font-size: 18px;
     margin: 10px 0;
     color: #a15f0e;
+    min-height: 40px; /* Tambahkan tinggi minimum agar heading tetap sejajar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Harga paket */
 .menu-item p {
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0;
     color: #333;
+    line-height: 1.5;
 }
 
 /* Tombol */
