@@ -52,9 +52,16 @@ function removeItem() {
 
 function checkout() {
     if (orderList.length > 0) {
-        alert(`Total pesanan Anda: Rp ${totalPrice}`);
-        orderList = [];
-        updateOrderList();
+        // Ambil nilai metode pembayaran dari dropdown
+        const paymentMethod = document.getElementById("paymentMethod").value;
+
+        if (paymentMethod) {
+            alert(`Total pesanan Anda: Rp ${totalPrice}\nMetode Pembayaran: ${paymentMethod}`);
+            orderList = [];
+            updateOrderList();
+        } else {
+            alert("Pilih metode pembayaran terlebih dahulu.");
+        }
     } else {
         alert("Pesanan Anda kosong. Tambahkan menu terlebih dahulu.");
     }

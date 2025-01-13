@@ -65,6 +65,24 @@
         <button onclick="addOrder()">Tambah ke Pesanan</button>
         <button onclick="removeItem()">Hapus Item</button>
         <button onclick="checkout()">Checkout</button>
+        
+        <!-- Bagian untuk memilih metode pembayaran -->
+        <section class="payment-method">
+            <h2>Pilih Metode Pembayaran</h2>
+            <form id="paymentForm">
+                <label for="paymentMethod">Metode Pembayaran:</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="cash">Tunai</option>
+                    <option value="credit">Kartu Kredit</option>
+                    <option value="bank">Transfer Bank</option>
+                    <option value="gopay">GoPay</option>
+                    <option value="ovo">OVO</option>
+                </select>
+                <br><br>
+                <button type="submit">Konfirmasi Pembayaran</button>
+            </form>
+        </section>
+        
         <section class="orders">
             <h2>Pesanan Anda</h2>
             <ul id="orderList"></ul>
